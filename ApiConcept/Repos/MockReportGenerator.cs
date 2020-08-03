@@ -100,7 +100,6 @@ namespace ApiConcept.Repos
 
         public MemoryStream GetTemplate()
         {
-            PdfDocument template = new PdfDocument("C:\\Users\\Lenovo\\source\\repos\\ApiConcept\\ApiConcept\\Templates\\template.pdf");
             MemoryStream stream = new MemoryStream();
             template.SaveToStream(stream);
             return stream;
